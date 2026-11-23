@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real ou IA?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <style>
+        .img { cursor: zoom-in; }
+        .btn-branco {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+            border: 1px solid #cccccc !important;
+        }
+        @media (min-width: 992px) {
+            .p-2.w-100 {
+                max-width: 1100px !important;
+            }
+            .img {
+                max-width: 650px !important;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body data-bs-theme="dark" class="py-4" style="--bs-body-bg: #03000a33; --bs-body-color: #ffffe3;">
+    <div class="container">
+        <h1 class="text-center mb-4" style="color:#ebeedb;">
+            Como saber se é IA ou não?
+        </h1>
+        
+        <div class="d-flex flex-column align-items-center">
+            <div class="p-2 w-100 max-w-custom" style="max-width: 600px; color: #ebeedb;">
+                <h3>Analise as proporções:</h3>
+                <p class="text-start" style="color:#ebeedb;">
+                    Mesmo que sejam realistas, continuam carecendo de detalhes pontuais como por exemplo, proporção exata, mãos de tamanhos diferentes, rosto com poucos detalhes ou estilizado como um desenho
+                </p>
+                <img src="imagens/thispersondoesnotexist.jpg" onclick="zoomFin(this.src)" class="img mx-auto d-block rounded" style="max-width:400px;" alt="exemplo de imagem gerada por IA">
+            </div>
+
+            <div class="p-2 w-100" style="max-width: 600px; color: #ebeedb;">
+                <h3>Dê Zoom:</h3>
+                <p class="text-start">
+                    Por serem criadas a partir de outras várias imagens, é possível detectar diversas anomalias, por isso sempre dê zoom em caso de dúvidas
+                </p>
+                <img src="imagens/Hivestock-capa-768x512.png" onclick="zoomFin(this.src)" class="img mx-auto d-block rounded" style="max-width:400px;" alt="exemplo de detalhes com zoom">
+            </div>  
+
+            <div class="p-2 w-100" style="max-width: 600px;color: #ebeedb;">
+                <h3>Atenção por onde essas imagens são veiculadas:</h3>
+                <p class="text-start" style="color:#ebeedb;">
+                    Por serem de fácil criação e por conta de sua qualidade crescente, busque saber de onde as imagens vieram, procure as fontes e sempre duvide até que a imagem se prove verdadeira através da pesquisa
+                </p>
+                <img src="imagens/deepfake.jpg" onclick="zoomFin(this.src)" class="img mx-auto d-block rounded" style="max-width:400px;" alt="exemplo de deepfake">
+            </div>
+
+            <div class="p-2 w-100" style="max-width: 600px;color: #ebeedb;">
+                <h3>Textos mais que perfeitos:</h3>
+                <p class="text-start" style="color:#ebeedb;">
+                    Como IA generativas são como corretores de texto ambulante, elas carecem de pequenos erros que nós cometemos, criam textos exagerademente polidos, com pouca variação de palavras, previsiveis por conta que a IA raramente varia no tamanho das frases
+                </p>
+                <img src="imagens/robot-writing.gif" onclick="zoomFin(this.src)" class="img mx-auto d-block rounded" style="max-width:400px;" alt="robo escrevendo de forma excentrica">
+            </div>
+
+            <div class="p-2 w-100" style="max-width: 600px;color: #ebeedb;">
+                <h3>Pouco tato com a realidade:</h3>
+                <p class="text-start" style="color:#ebeedb;">
+                    Como IA não é um ser humano, ela não tem as mesmas nuances que alguem de carne e osso, carece de conhecimento cultural aprofundado, assim como é extremamante impessoal.
+                </p>
+                <img src="imagens/so-done-robot.gif" onclick="zoomFin(this.src)" class="img mx-auto d-block rounded" style="max-width:400px;" alt="robo escrevendo">
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+
+    <div class="container">
+    <div class="p-2 w-100" style="max-width: 600px;color: #ebeedb;">
+        <h1 class="text-center mb-4" style="color:#ebeedb;">
+            Sites que eu recomendo
+        </h1>
+        <div>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.agencialupa.org/">
+                <h3 style="color:#ebeedb;">
+                    Agencia Lupa
+                </h3>
+            </a>
+                <p>
+                    Uma agencia de checagem de fatos sem viés, um ótimo ponto de partida para começar a checar a veracidade dos fatos, porém ainda a ponta do iceberg no que se diz respeito o factchecking.
+                </p>
+        </div>
+        <div>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.factcheck.org/">
+                <h3 style="color:#ebeedb;">
+                    FactCheck.org
+                </h3>
+            </a>
+                <p>
+                    Um site sem fins lucrativos que verifica noticias e matérias nos EUA, sua importancia se da ao fato do momento geopolitico atual envolver demais os Estados Unidos da America.
+                </p>
+        </div>
+        <div>
+            <a target="_blank" rel="noopener noreferrer" href="https://ground.news/">
+                <h3 style="color:#ebeedb;">
+                    Ground News
+                </h3>
+            </a>
+                <p>
+                    Favorito de muitos, uma central de noticias que compila noticias de diversos veiculos de mídia, mostrando o víes do veiculador e todas as versões da mesma noticia.
+                </p>
+        </div>        
+    </div>
+    </div>
+    
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col text-center">
+                <a href="index.html" class="btn btn-primary btn-branco">
+                    Tente Novamente!
+                </a>
+            </div>
+        </div>
+    </div>   
+    
+    <div class="color: #ebeedb;">
+        <nav class="text-center text-muted my-2">
+            FONTES:
+        </nav>
+        <nav class="text-center text-muted my-2">
+            <a target="_blank" rel="noopener noreferrer" href="https://prodest.es.gov.br/saiba-como-identificar-imagens-geradas-por-inteligencia-artificial">
+                PRODEST
+            </a>
+        </nav>
+        <nav class="text-center text-muted my-2">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.estadao.com.br/tecmundo/inteligencia-artificial/294640-14-dicas-saber-texto-escrito-ia/">
+                TECMUNDO
+            </a>
+        </nav>
+    </div>
+
+    
+
+    <footer class="text-center text-muted mb-4">
+        Feito por Lucas Vinicius BS1-4
+    </footer>
+
+    <div id="fin-zoom" onclick="this.style.display='none'" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.88); z-index:999; justify-content:center; align-items:center; cursor:zoom-out;">
+        <img id="fin-zoom-img" style="max-width:92%; max-height:90%; border-radius:8px;">
+    </div>
+
+    <script>
+        function zoomFin(src) {
+            document.getElementById("fin-zoom-img").src = src;
+            document.getElementById("fin-zoom").style.display = "flex";
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+</body>
+</html>
